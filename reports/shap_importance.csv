@@ -1,0 +1,12 @@
+feature,mean_abs_shap
+overdue_ratio,0.30443993
+frequency,0.29455343
+n_products,0.22598873
+avg_gap_days,0.14752267
+recency_days,0.12114849
+monetary,0.109480835
+total_items,0.079291135
+tenure_days,0.07320143
+avg_order_value,0.07303599
+orders_last_90d,0.004384915
+is_uk,0.0012744085

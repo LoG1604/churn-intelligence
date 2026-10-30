@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="1000" height="230" role="img" aria-label="Pipeline: data, clean with DuckDB and SQL, RFM features and churn label, XGBoost model, SHAP and KMeans, retention plan in Streamlit">
+<style>
+    .s { font-family: 'Source Sans Pro','Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes sweep { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+    @keyframes ring { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(3); opacity: 0; } }
+    @keyframes dash { to { stroke-dashoffset: -24; } }
+    .rise { animation: rise .65s cubic-bezier(.2,.8,.2,1) both; }
+    .fade { animation: fade .6s ease both; }
+    .bar { transform-box: fill-box; transform-origin: 50% 100%; animation: grow .9s cubic-bezier(.2,.8,.2,1) both; }
+    .hbar { transform-box: fill-box; transform-origin: 0% 50%; animation: sweep .9s cubic-bezier(.2,.8,.2,1) both; }
+    .pulse { animation: pulse 1.5s ease-in-out infinite; }
+    .ring { transform-box: fill-box; transform-origin: 50% 50%; animation: ring 1.8s ease-out infinite; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1000" height="230" rx="18" fill="#0E1117"/>
+<rect x="1" y="1" width="998" height="228" rx="17" fill="none" stroke="#2A3140" stroke-width="2"/>
+<text class="s" x="40" y="42" font-size="16" font-weight="700" fill="#9AA4B2">How it works: from raw data to action</text>
+<line x1="90" y1="125" x2="910" y2="125" stroke="#2A3140" stroke-width="3" stroke-dasharray="6 6" style="animation: dash 1.2s linear infinite"/>
+<g class="rise" style="animation-delay:0.2s">
+<rect x="20" y="70" width="140" height="110" rx="12" fill="#161B26" stroke="#4ADE80" stroke-opacity=".8" stroke-width="1.5"/>
+<circle cx="44" cy="94" r="12" fill="#4ADE80"/>
+<text class="s" x="44" y="99" font-size="13" font-weight="700" text-anchor="middle" fill="#0E1117">1</text>
+<text class="s" x="66" y="99" font-size="13" font-weight="700" letter-spacing="1.5" fill="#4ADE80">DATA</text>
+<text class="s" x="34" y="136" font-size="14" font-weight="600" fill="#FAFAFA">Online Retail</text>
+<text class="s" x="34" y="158" font-size="12" fill="#9AA4B2">UCI, 2010-2011</text>
+</g>
+<g class="rise" style="animation-delay:0.45s">
+<rect x="184" y="70" width="140" height="110" rx="12" fill="#161B26" stroke="#FBBF24" stroke-opacity=".8" stroke-width="1.5"/>
+<circle cx="208" cy="94" r="12" fill="#FBBF24"/>
+<text class="s" x="208" y="99" font-size="13" font-weight="700" text-anchor="middle" fill="#0E1117">2</text>
+<text class="s" x="230" y="99" font-size="13" font-weight="700" letter-spacing="1.5" fill="#FBBF24">CLEAN</text>
+<text class="s" x="198" y="136" font-size="14" font-weight="600" fill="#FAFAFA">DuckDB + SQL</text>
+<text class="s" x="198" y="158" font-size="12" fill="#9AA4B2">clean transactions</text>
+</g>
+<g class="rise" style="animation-delay:0.7s">
+<rect x="348" y="70" width="140" height="110" rx="12" fill="#161B26" stroke="#F87171" stroke-opacity=".8" stroke-width="1.5"/>
+<circle cx="372" cy="94" r="12" fill="#F87171"/>
+<text class="s" x="372" y="99" font-size="13" font-weight="700" text-anchor="middle" fill="#0E1117">3</text>
+<text class="s" x="394" y="99" font-size="13" font-weight="700" letter-spacing="1.5" fill="#F87171">FEATURES</text>
+<text class="s" x="362" y="136" font-size="14" font-weight="600" fill="#FAFAFA">RFM + churn label</text>
+<text class="s" x="362" y="158" font-size="12" fill="#9AA4B2">cutoff 2011-09-10</text>
+</g>
+<g class="rise" style="animation-delay:0.95s">
+<rect x="512" y="70" width="140" height="110" rx="12" fill="#161B26" stroke="#60A5FA" stroke-opacity=".8" stroke-width="1.5"/>
+<circle cx="536" cy="94" r="12" fill="#60A5FA"/>
+<text class="s" x="536" y="99" font-size="13" font-weight="700" text-anchor="middle" fill="#0E1117">4</text>
+<text class="s" x="558" y="99" font-size="13" font-weight="700" letter-spacing="1.5" fill="#60A5FA">MODEL</text>
+<text class="s" x="526" y="136" font-size="14" font-weight="600" fill="#FAFAFA">XGBoost</text>
+<text class="s" x="526" y="158" font-size="12" fill="#9AA4B2">predicts churn</text>
+</g>
+<g class="rise" style="animation-delay:1.2s">
+<rect x="676" y="70" width="140" height="110" rx="12" fill="#161B26" stroke="#A78BFA" stroke-opacity=".8" stroke-width="1.5"/>
+<circle cx="700" cy="94" r="12" fill="#A78BFA"/>
+<text class="s" x="700" y="99" font-size="13" font-weight="700" text-anchor="middle" fill="#0E1117">5</text>
+<text class="s" x="722" y="99" font-size="13" font-weight="700" letter-spacing="1.5" fill="#A78BFA">EXPLAIN</text>
+<text class="s" x="690" y="136" font-size="14" font-weight="600" fill="#FAFAFA">SHAP + KMeans</text>
+<text class="s" x="690" y="158" font-size="12" fill="#9AA4B2">why + 3 segments</text>
+</g>
+<g class="rise" style="animation-delay:1.45s">
+<rect x="840" y="70" width="140" height="110" rx="12" fill="#161B26" stroke="#FF4B4B" stroke-opacity=".8" stroke-width="1.5"/>
+<circle cx="864" cy="94" r="12" fill="#FF4B4B"/>
+<text class="s" x="864" y="99" font-size="13" font-weight="700" text-anchor="middle" fill="#0E1117">6</text>
+<text class="s" x="886" y="99" font-size="13" font-weight="700" letter-spacing="1.5" fill="#FF4B4B">ACT</text>
+<text class="s" x="854" y="136" font-size="14" font-weight="600" fill="#FAFAFA">Retention plan</text>
+<text class="s" x="854" y="158" font-size="12" fill="#9AA4B2">Gemini + Streamlit</text>
+</g>
+<circle cy="125" r="6" fill="#FF4B4B"><animate attributeName="cx" from="30" to="970" dur="5s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="5s" begin="1.5s" repeatCount="indefinite"/></circle>
+</svg>

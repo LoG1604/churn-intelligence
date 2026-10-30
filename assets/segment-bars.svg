@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Share of customers vs share of revenue by segment. Champions are 25.6% of customers and 76.1% of revenue. Occasional Buyers are 45.4% and 17.7%. Lapsed are 29.1% and 6.2%.">
+<style>
+    .s { font-family: 'Source Sans Pro','Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes sweep { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+    @keyframes ring { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(3); opacity: 0; } }
+    @keyframes dash { to { stroke-dashoffset: -24; } }
+    .rise { animation: rise .65s cubic-bezier(.2,.8,.2,1) both; }
+    .fade { animation: fade .6s ease both; }
+    .bar { transform-box: fill-box; transform-origin: 50% 100%; animation: grow .9s cubic-bezier(.2,.8,.2,1) both; }
+    .hbar { transform-box: fill-box; transform-origin: 0% 50%; animation: sweep .9s cubic-bezier(.2,.8,.2,1) both; }
+    .pulse { animation: pulse 1.5s ease-in-out infinite; }
+    .ring { transform-box: fill-box; transform-origin: 50% 50%; animation: ring 1.8s ease-out infinite; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1000" height="340" rx="18" fill="#0E1117"/>
+<rect x="1" y="1" width="998" height="338" rx="17" fill="none" stroke="#2A3140" stroke-width="2"/>
+<text class="s" x="40" y="44" font-size="18" font-weight="700" fill="#FAFAFA">Few customers, most of the revenue</text>
+<rect x="640" y="30" width="16" height="16" rx="3" fill="#FFFFFF" fill-opacity=".35"/><text class="s" x="662" y="43" font-size="13" fill="#9AA4B2">% of customers</text>
+<rect x="790" y="30" width="16" height="16" rx="3" fill="#FFFFFF"/><text class="s" x="812" y="43" font-size="13" fill="#9AA4B2">% of past revenue</text>
+<text class="s fade" style="animation-delay:0.2s" x="40" y="116" font-size="16" font-weight="700" fill="#4ADE80">Champions</text>
+<rect class="hbar" style="animation-delay:0.4s" x="210" y="80" width="161" height="26" rx="4" fill="#2E8B57" fill-opacity=".45"/>
+<rect class="hbar" style="animation-delay:0.65s" x="210" y="112" width="479" height="26" rx="4" fill="#2E8B57"/>
+<text class="s fade" style="animation-delay:1.3s" x="381" y="99" font-size="14" font-weight="700" fill="#FAFAFA">25.6%</text>
+<text class="s fade" style="animation-delay:1.5s" x="699" y="131" font-size="14" font-weight="700" fill="#FAFAFA">76.1%</text>
+<text class="s fade" style="animation-delay:0.55s" x="40" y="200" font-size="16" font-weight="700" fill="#FBBF24">Occasional Buyers</text>
+<rect class="hbar" style="animation-delay:0.75s" x="210" y="164" width="286" height="26" rx="4" fill="#F5A300" fill-opacity=".45"/>
+<rect class="hbar" style="animation-delay:1.0s" x="210" y="196" width="112" height="26" rx="4" fill="#F5A300"/>
+<text class="s fade" style="animation-delay:1.6500000000000001s" x="506" y="183" font-size="14" font-weight="700" fill="#FAFAFA">45.4%</text>
+<text class="s fade" style="animation-delay:1.85s" x="332" y="215" font-size="14" font-weight="700" fill="#FAFAFA">17.7%</text>
+<text class="s fade" style="animation-delay:0.8999999999999999s" x="40" y="284" font-size="16" font-weight="700" fill="#F87171">Lapsed</text>
+<rect class="hbar" style="animation-delay:1.0999999999999999s" x="210" y="248" width="183" height="26" rx="4" fill="#C0392B" fill-opacity=".45"/>
+<rect class="hbar" style="animation-delay:1.3499999999999999s" x="210" y="280" width="39" height="26" rx="4" fill="#C0392B"/>
+<text class="s fade" style="animation-delay:2.0s" x="403" y="267" font-size="14" font-weight="700" fill="#FAFAFA">29.1%</text>
+<text class="s fade" style="animation-delay:2.2s" x="259" y="299" font-size="14" font-weight="700" fill="#FAFAFA">6.2%</text>
+</svg>

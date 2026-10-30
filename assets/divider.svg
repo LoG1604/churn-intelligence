@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="1000" height="24" role="presentation">
+  <defs><linearGradient id="d" x1="0" x2="1"><stop offset="0" stop-color="#2E8B57"/><stop offset=".5" stop-color="#F5A300"/><stop offset="1" stop-color="#C0392B"/></linearGradient></defs>
+  <style>
+    @keyframes dash { to { stroke-dashoffset: -24; } }
+    .dl { stroke-dasharray: 6 6; animation: dash 1.2s linear infinite; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <line class="dl" x1="0" y1="12" x2="1000" y2="12" stroke="url(#d)" stroke-width="3"/>
+  <circle cy="12" r="6" fill="#FF4B4B"><animate attributeName="cx" from="0" to="1000" dur="4s" repeatCount="indefinite"/></circle>
+</svg>
